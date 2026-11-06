@@ -32,20 +32,20 @@ def main():
                 continue
 
         if opcion == 1:
-                registrar_gasto
-                guardar_datos 
+                registrar_gasto(gastos)
+                guardar_datos (gastos)
         elif opcion == 2:
-                listar_gastos
+                listar_gastos(gastos)
         elif opcion == 3:
-                buscar_gastos
+                buscar_gastos(gastos)
         elif opcion == 4:
-                modificar_gastos
-                guardar_datos
+                modificar_gastos(gastos)
+                guardar_datos(gastos)
         elif opcion == 5:
-                eliminar_gasto
-                guardar_datos
+                eliminar_gasto(gastos)
+                guardar_datos(gastos)
         elif opcion == 6:
-                reporte_gastos_por_categoria
+                reporte_gastos_por_categoria(gastos)
         elif opcion == 7:
                 print("\nGracias por usar el sistema!! Saliendo...")
                 break 
