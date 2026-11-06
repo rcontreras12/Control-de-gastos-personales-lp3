@@ -126,3 +126,22 @@ def eliminar_gasto(gastos):
     print(f"🗑️ Gasto eliminado: {eliminado['categoria']} - ${eliminado['monto']:.2f}")
 
     #--- Aca termina mi parte :) (Antonio)
+    #--- Aqui comienza mi parte (Yoxel)
+    def reporte_gastos_por_categoria(gastos)
+        print("\n---REPORTE: TOTAL GASTADO POR CATEGORIA---")
+        if not gastos:
+            print("No hay suficientes datos para imprimir el reporte")
+            return
+        totales = {}
+        for g in gastos
+            cat = g['categoria']
+            monto = g['monto']
+            totales[cat] = totales.get(cat, 0.0) + monto
+
+    print(f"{'CATEGORÍA':<20} | {'TOTAL GASTADO':<15}")
+    print("-" * 38)
+    for cat, total in totales.items():
+        print(f"{cat:<20} | ${total:<14.2f}")
+    print("-" * 38)
+#---Aqui termina mi parte Yoxel
+                            
